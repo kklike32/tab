@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>T.A.B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://kklike32.github.io/tab/">T.A.B</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://kklike32.github.io/tab/">Home</a></li>
+        <li><a href="https://kklike32.github.io/tab/#about">About Us</a></li>
+        <li><a href="https://kklike32.github.io/nanoc/products/">Products</a></li>
+        <li><a href="https://kklike32.github.io/nanoc/#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class='modelo-wrapper'>
+        <div style="width: 100%; padding-bottom: 56.25%; position: relative">
+          <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+            <iframe src="" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen >
+            </iframe>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-caption">
+          <h3>Base Blanet</h3>
+          <p>A model of the basic blanket design</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center" id="about">    
+  <h3>What We Do:</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="" class="img-responsive" style="width:100%" alt="Image" data-toggle="modal" data-target="#myModal">
+      <p>Blanket 3D Modeling</p>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Blanket 3D Modeling</h4>
+        </div>
+        <div class="modal-body">
+          <img src="" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4"> 
+      <img src="" class="img-responsive" style="width:100% height: 100%" alt="Image">
+      <p>Blanket Assembly</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>We are a group of high school students designing blankets that adjusts the temperature for everyday
+       users like you.</p>
+      </div>
+      <div class="well">
+       <p>Every blanket is carefully modeled and designed to ensure the quality of the blanket.</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+<hr>
+<div class="container" id="about">    
+  <h3 class="text-center">What Does the Blanket Do:</h3><br>
+  <div class="row">
+    <div class="col-sm-10">
+      <p>Random Text</p>
+    </div>
+  </div>
+</div><br>
+<hr>
+<div class="container" id="">    
+  <h3 class="text-center">What Other People Think:</h3><br>
+  <div class="row">
+    <div class="col-sm-10">
+      <p>Survey Data insertt</p>
+    </div>
+  </div>
+</div><br>
+<hr>
+<div class="container" id="contact">
+  <h3>Contact Us</h3>
+  <p>If you need to contact us, please contact us at one of these emails:</p>
+  <ul>
+    <li><a href="mailto:keenanlike@gmail.com">keenanlike@gmail.com</a></li>
+    <li><a href="mailto:shravan.nemmara@gmail.com">shravan.nemmara@gmail.com</a></li>
+    <li><a href="mailto:rtamirasa@gmail.com">rtamirasa@gmail.com</a></li>
+  </ul>
+</div>
+<footer class="container-fluid text-center">
+  <p>&copy; 2020 Keenan Kalra, Shravan Nemmara, and Ridhi Tamirassa</p>
+</footer>
+
+</body>
+</html>
