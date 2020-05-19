@@ -1,0 +1,78 @@
+body {
+  background-image: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(0, 100, 245));
+  text-align: center;
+}
+
+.faq-header {
+  display: inline-block;
+  background-color: rgba(255,255,255,.85);
+  padding: 15px 20px;
+  font-size: 70px;
+  margin-top: 50px;
+  border-radius: 3px;
+}
+
+.faq-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 450px;
+  padding: 75px;
+  grid-gap: 90px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -mox-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.card-side {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2px;
+  border: rgba(1,1,1,.5);
+  border-radius: 20px;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+.back {
+  padding: 50px;
+  padding-top: 20px;
+  transform: rotateY(180deg);
+  background-color: #eee;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.answer {
+  margin-top: 40px;
+  line-height: 25px;
+}
+
+.question {
+  font-size: 25px;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(360deg);
+}
